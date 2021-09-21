@@ -15,7 +15,7 @@ public class UserResource {
     private UserService service;
 
     @PostMapping
-    public ResponseEntity<UserDTO> post(@RequestBody UserDTO dto){
+    public ResponseEntity<UserDTO> post(@RequestBody UserDTO dto) throws Exception {
         return  ResponseEntity.ok().body(service.save(dto));
     }
 }

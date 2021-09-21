@@ -27,7 +27,7 @@ public class UserService {
 
 
     @Transactional
-    public UserDTO save(UserDTO dto) {
+    public UserDTO save(UserDTO dto) throws Exception {
         User aux = new User();
         return new UserDTO(repository.save(copyDtoToEntity(aux, dto)),aux.getAddresses());
     }
@@ -36,7 +36,7 @@ public class UserService {
     // Auxiliary methods
 
 
-    private User copyDtoToEntity(User entity, UserDTO dto) {
+    private User copyDtoToEntity(User entity, UserDTO dto) throws Exception {
 
         entity.setGithub_username(dto.getGithub_username());
         entity.setCep(dto.getCep());
