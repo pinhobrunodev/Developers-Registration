@@ -17,7 +17,7 @@
 ```
   {
     "username":"github_username",
-    "cep":"99999-999",
+    "cep":"99999-999 ( Please, enter a valid CPF )  ",
     "email":"bruno@gmail.com"
     
     }
