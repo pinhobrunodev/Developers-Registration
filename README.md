@@ -14,10 +14,12 @@
 
 - Input example :
 
+ ( Please, enter a valid CEP )  
+
 ```
   {
     "username":"pinhobrunodev",
-    "cep":"99999-999 ( Please, enter a valid CPF )  ",
+    "cep":"4485-370",
     "email":"bruno@gmail.com"
     
     }
